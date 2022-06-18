@@ -2,6 +2,16 @@
 
 My AWS
 
+## AWS Certified Cloud Practitioner
+
+![1655575619582](image/README/1655575619582.png)
+
+![1655575644262](image/README/1655575644262.png)
+
+![1655571566185](image/README/1655571566185.png)
+
+![1655575597765](image/README/1655575597765.png)
+
 ## AWS intro
 
 ![](image/README/001.png)
