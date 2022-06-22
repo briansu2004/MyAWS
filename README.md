@@ -453,5 +453,17 @@ boto3 (for s3 and dynamodb)
 
 ![1655913054311](image/README/1655913054311.png)
 
+## ElastiCache for Memcached
 
+![1655914315841](image/README/1655914315841.png)
 
+This combination of DynamoDB and ElastiCache is very popular with mobile and game companies, because DynamoDB allows for higher write throughput at lower cost than traditional relational databases. In addition, DynamoDB uses a key-value access pattern similar to ElastiCache, which also simplifies the programming model. Instead of using relational SQL for the primary database but then key-value patterns for the cache, both the primary database and cache can be programmed similarly. In this
+architecture pattern, DynamoDB remains the source of truth for data, but application reads are offloaded to ElastiCache for a speed boost.
+
+## RDS vs Aurora
+
+![1655917202036](image/README/1655917202036.png)
+
+Amazon RDS for PostgreSQL and Amazon Aurora PostgreSQL-Compatible Edition both have their own use cases and optimization techniques, and require application optimization accordingly. It should be carefully determined whether Amazon RDS for PostgreSQL or Aurora PostgreSQL is best suited for your business requirements.
+
+Amazon RDS for PostgreSQL is ideal when you have a small-to-medium intense workload. It works best when you have limited concurrent connections to your database. If you're moving from commercial database engines such as Oracle or Microsoft SQL Server, Aurora PostgreSQL is a better choice because it provides matching performance with a lower price.
