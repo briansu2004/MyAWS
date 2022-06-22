@@ -2,6 +2,38 @@
 
 My AWS
 
+## AWS Global Accelerator
+
+![1655905088254](image/README/1655905088254.png)
+
+![1655905131978](image/README/1655905131978.png)
+
+![1655905172302](image/README/1655905172302.png)
+
+![1655905222081](image/README/1655905222081.png)
+
+![1655905298278](image/README/1655905298278.png)
+
+Listener
+
+Endpoint groups
+
+Application Load Balancers
+
+Network Load Balancers
+
+EC2 Instances
+
+Elastic IP Addresses
+
+![1655905494265](image/README/1655905494265.png)
+
+![1655905476166](image/README/1655905476166.png)
+
+![1655905453982](image/README/1655905453982.png)
+
+![1655905433143](image/README/1655905433143.png)
+
 ## AWS Certified Cloud Practitioner
 
 ![1655575619582](image/README/1655575619582.png)
