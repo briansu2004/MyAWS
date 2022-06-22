@@ -36,12 +36,34 @@ Elastic IP Addresses
 
 ## AWS Elastic Load Balancer
 
-ELB Types
+ELB Types:
 
 - Application Load Balancer (ALB)
 - Network Load Balancer (NLB)
 - Gateway Load Balancer (GWLB)
 - Classic Load Balancer (CLB)
+
+Components:
+
+- Listeners
+- Target grpups
+- Health checks
+
+ELB Key Points:
+
+- ELB is one of the most the ideal solution for adding elasticity to your application.
+- ELB does not have predefined IPv4 addresses, it is resolved using DNS name.
+- ELB can manage traffic within a region and not across multiple regions.
+- You can specify only one subnet per Availability Zone (AZ).
+- ELB has more than one listeners. e.g. HTTP, HTTPS.
+- For internet-facing load balancers, the IPv4 addresses of the nodes are assigned by AWS. For internal load balancers, the IPv4 addresses are assigned from the subnet CIDR.
+- To ensure that traffic is evenly distributed, you need to ensure the “Cross-Zone Load balancing” option is enabled.
+
+Key Differences:
+
+- Application Load Balancer (as the name implies) works at the Application Layer (Layer 7 of the OSI model, Request level). Network Load Balancer works at Transport layer (Layer 4 of the OSI model, Connection level). NLB just forward requests whereas ALB examines the contents of the HTTP request header to determine where to route the request. So, application load balancer is performing content based routing.
+- NLB cannot assure availability of the application. This is because it bases its decisions solely on network and TCP-layer variables and has no awareness of the application at all. Generally a NLB determines availability based on the ability of a server to respond to ICMP ping, or to correctly complete the three-way TCP handshake. ALB goes much deeper, and is capable of determining availability based on not only a successful HTTP GET of a particular page but also the verification that the content is as was expected based on the input parameters.
+- When considering the deployment of multiple applications on the same host sharing IP addresses (virtual hosts in old school speak), NLB will not differentiate between Application A and Application B when checking availability (indeed it cannot unless ports are different) but ALB will differentiate between the two applications by examining the application layer data available to it. This difference means that NLB may end up sending requests to an application that has crashed or is offline, but ALB will never make that same mistake.
 
 ## ALB vs NLB
 
