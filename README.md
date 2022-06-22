@@ -34,6 +34,25 @@ Elastic IP Addresses
 
 ![1655905433143](image/README/1655905433143.png)
 
+## AWS Elastic Load Balancer
+
+ELB Types
+
+- Application Load Balancer (ALB)
+- Network Load Balancer (NLB)
+- Gateway Load Balancer (GWLB)
+- Classic Load Balancer (CLB)
+
+## ALB vs NLB
+
+![1655907398688](image/README/1655907398688.png)
+
+ALB — Layer 7 (HTTP/HTTPS traffic), Flexible.
+
+NLB — Layer 4 (TLS/TCP/UDP traffic), Static IPs.
+
+CLB — Layer 4/7 (HTTP/TCP/SSL traffic), Legacy, Avoid.
+
 ## AWS Application Load Balancer
 
 ![1655905598262](image/README/1655905598262.png)
@@ -69,6 +88,24 @@ Elastic IP Addresses
 ![1655906198945](image/README/1655906198945.png)
 
 ![1655906210196](image/README/1655906210196.png)
+
+![1655906396780](image/README/1655906396780.png)
+
+## AWS Network Load Balancer
+
+![1655906621502](image/README/1655906621502.png)
+
+![1655907056647](image/README/1655907056647.png)
+
+![1655907108808](image/README/1655907108808.png)
+
+![1655907152198](image/README/1655907152198.png)
+
+![1655907164499](image/README/1655907164499.png)
+
+![1655907196631](image/README/1655907196631.png)
+
+![1655907256669](image/README/1655907256669.png)
 
 ## AWS Certified Cloud Practitioner
 
