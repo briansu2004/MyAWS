@@ -397,6 +397,8 @@ The two key differences between the IAM role and IAM user are:
 
 ## ITSG-33 security controls (SSC)
 
+![1655909631039](image/README/1655909631039.png)
+
 ![1655909329561](image/README/1655909329561.png)
 
 ![1655909350834](image/README/1655909350834.png)
@@ -406,3 +408,9 @@ The two key differences between the IAM role and IAM user are:
 ![1655909419305](image/README/1655909419305.png)
 
 ![1655909499290](image/README/1655909499290.png)
+
+## AWS Lambda with Python
+
+![1655909765960](image/README/1655909765960.png)
+
+![1655909808767](image/README/1655909808767.png)
