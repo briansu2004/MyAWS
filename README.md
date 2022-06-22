@@ -378,3 +378,19 @@ The two key differences between the IAM role and IAM user are:
 - An IAM role is an IAM entity that defines a set of permissions for making AWS service requests, while an IAM user has permanent long-term credentials and is used to interact with the AWS services directly.
 
 - In the IAM role, trusted entities, like IAM users, applications, or an AWS service, assume roles whereas the IAM user has full access to all the AWS IAM functionalities.
+
+## GC cloud Guardrails (SSC)
+
+![1655908673057](image/README/1655908673057.png)
+
+![1655908854056](image/README/1655908854056.png)
+
+![1655908936188](image/README/1655908936188.png)
+
+![1655909000246](image/README/1655909000246.png)
+
+![1655909013940](image/README/1655909013940.png)
+
+![1655909080195](image/README/1655909080195.png)
+
+![1655909091624](image/README/1655909091624.png)
