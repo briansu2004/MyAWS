@@ -413,7 +413,7 @@ The two key differences between the IAM role and IAM user are:
 
 json
 
-boto3 (for s3)
+boto3 (for s3 and dynamodb)
 
 ![1655909765960](image/README/1655909765960.png)
 
@@ -434,3 +434,13 @@ boto3 (for s3)
 ![1655910873255](image/README/1655910873255.png)
 
 ![1655910923793](image/README/1655910923793.png)
+
+![1655911093146](image/README/1655911093146.png)
+
+![1655911459313](image/README/1655911459313.png)
+
+![1655911432826](image/README/1655911432826.png)
+
+![1655911568609](image/README/1655911568609.png)
+
+![1655911750176](image/README/1655911750176.png)
