@@ -467,3 +467,7 @@ architecture pattern, DynamoDB remains the source of truth for data, but applica
 Amazon RDS for PostgreSQL and Amazon Aurora PostgreSQL-Compatible Edition both have their own use cases and optimization techniques, and require application optimization accordingly. It should be carefully determined whether Amazon RDS for PostgreSQL or Aurora PostgreSQL is best suited for your business requirements.
 
 Amazon RDS for PostgreSQL is ideal when you have a small-to-medium intense workload. It works best when you have limited concurrent connections to your database. If you're moving from commercial database engines such as Oracle or Microsoft SQL Server, Aurora PostgreSQL is a better choice because it provides matching performance with a lower price.
+
+## Glue
+
+Crawler
