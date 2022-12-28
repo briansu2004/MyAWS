@@ -51,9 +51,6 @@ You can use Amazon Rekognition Video to detect and recognize faces or detect obj
 
 ![1672198793539](image/README/1672198793539.png)
 
-
-
-
 ## Misc
 
 Use `CloudPing.co` to find the closest supported region to you
