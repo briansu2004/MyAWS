@@ -107,7 +107,21 @@ Use `CloudPing.co`
         - Security Group
         - Routing
   - AWS ECS
-  - ...
+    - Task Definition
+    - Add Container
+      - Image (URI of the ECR repository)
+      - Memory limits
+      - Port mappings
+      - Login configuration
+    - Cluster
+      - EC2 instance type
+      - Networking (VPC, security group etc.)
+    - Create service
+      - Launch type: EC2
+      - Load Balancing
+  - Verify
+    - EC2 -> Load Balancers -> DNS name
+    - Check in browser
 
 ### How to deploy React app to AWS EC2
 
