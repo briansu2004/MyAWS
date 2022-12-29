@@ -49,40 +49,15 @@ Migrated an on premise Cassandra to DynamoDB with AWS DMS for an insurance clien
 
 Use `CloudPing.co`
 
-### How to deploy React app to AWS S3
+### How to deploy an React app
 
-- React part
-  - Create React app
-    Route, i18n, use hooks, promises etc.
-  - Build backend APIs with Java, Node.js, python etc.
-  - Generate static HTML pages with react-snapshot or react-snap.
+#### How to deploy Java app to AWS with Lambda (recommended)
 
-    `"build": "react-scripts build && react-snapshot"`
+Serverless
 
-    `npm build`
+...
 
-- AWS part
-  - RDS (for DB like MySQL)
-    note the endpoint & port
-  - Elastic Beanstalk (to run and manage web apps)
-    "Environments": Upload jar file
-    "Configurations": gradle, maven, IAM
-    Load balancing, auto scaling etc.
-  - S3 (for hosting)
-    - Create a new S3 bucket
-      - ACL disabled / enabled
-      - Enable / Disable public access
-    - Configure the S3 bucket  
-      - Enable "Static Web Hosting"
-      - Permissions
-        - Bucket policy
-        - S3, GetObject
-        - Resource ARN
-  - Publish the static files
-    - Copy the static files with AWS CLI
-      (or drag-n-drop to AWS console UI but this is not recommended)
-
-### How to deploy React app to AWS ECR+EC2+ECS with docker
+#### How to deploy React app to AWS ECR+EC2+ECS with docker (recommended)
 
 - React part
   - Create React app
@@ -123,11 +98,61 @@ Use `CloudPing.co`
     - EC2 -> Load Balancers -> DNS name
     - Check in browser
 
-### How to deploy React app to AWS EC2
+#### How to deploy React app to AWS EC2 (not recommended)
 
-### How to deploy Java app to AWS with Lambda
+- React part
+  - Create React app
+    Route, i18n, use hooks, promises etc.
+  - Build backend APIs with Java, Node.js, python etc.
 
-...
+- AWS part
+  - AWS EC2
+    - Instance type
+    - Security group
+      - HTTP
+      - HTTPS
+    - Key pair
+    - Launch
+      - Public IP
+      - Private IP
+    - Connect with SSH
+      - install nodejs
+      - git clone
+      - npm i
+      - forever start app.js
+
+#### How to deploy React app to AWS S3 (not recommended)
+
+- React part
+  - Create React app
+    Route, i18n, use hooks, promises etc.
+  - Build backend APIs with Java, Node.js, python etc.
+  - Generate static HTML pages with react-snapshot or react-snap.
+
+    `"build": "react-scripts build && react-snapshot"`
+
+    `npm build`
+
+- AWS part
+  - RDS (for DB like MySQL)
+    note the endpoint & port
+  - Elastic Beanstalk (to run and manage web apps)
+    "Environments": Upload jar file
+    "Configurations": gradle, maven, IAM
+    Load balancing, auto scaling etc.
+  - S3 (for hosting)
+    - Create a new S3 bucket
+      - ACL disabled / enabled
+      - Enable / Disable public access
+    - Configure the S3 bucket  
+      - Enable "Static Web Hosting"
+      - Permissions
+        - Bucket policy
+        - S3, GetObject
+        - Resource ARN
+  - Publish the static files
+    - Copy the static files with AWS CLI
+      (or drag-n-drop to AWS console UI but this is not recommended)
 
 ## Misc
 
