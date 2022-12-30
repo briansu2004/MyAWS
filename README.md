@@ -61,9 +61,6 @@ Serverless
 
 ![1672414260246](image/README/1672414260246.png)
 
-
-
-
 - Hello you
 
 ### How to deploy an React app to AWS
