@@ -70,6 +70,47 @@ Serverless solution
   </dependency>
 ```
 
+```xml
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-deploy-plugin</artifactId>
+    <configuration>
+     <skip>true</skip>
+    </configuration>
+   </plugin>
+   <plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <dependencies>
+     <dependency>
+      <groupId>org.springframework.boot.experimental</groupId>
+      <artifactId>spring-boot-thin-layout</artifactId>
+      <version>1.0.28.RELEASE</version>
+     </dependency>
+    </dependencies>
+   </plugin>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <version>3.2.4</version>
+    <configuration>
+     <createDependencyReducedPom>false</createDependencyReducedPom>
+     <shadedArtifactAttached>true</shadedArtifactAttached>
+     <shadedClassifierName>aws</shadedClassifierName>
+    </configuration>
+   </plugin>
+  </plugins>
+ </build>
+```
+
+![1672431037586](image/README/1672431037586.png)
+
+[AWS part]
+
+Update `???-aws.jar` to AWS Lambda function
+
 #### How to deploy Java app to AWS with Lambda
 
 ##### Hello World
