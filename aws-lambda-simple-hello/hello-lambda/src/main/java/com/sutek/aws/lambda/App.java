@@ -1,4 +1,4 @@
-package com.sutek;
+package com.sutek.aws.lambda;
 
 /**
  * Hello world!

@@ -55,17 +55,33 @@ Serverless
 
 #### How to deploy Java app to AWS with Lambda
 
-- Hello World
+##### Hello World
 
 Amazon Corretto
 
 org.apache.maven.archetypes:maven-archetype-quickstart
 
-![1672414697880](image/README/1672414697880.png)
+![1672415107049](image/README/1672415107049.png)
+
+![1672415200278](image/README/1672415200278.png)
+
+![1672414871822](image/README/1672414871822.png)
 
 ![1672414260246](image/README/1672414260246.png)
 
-- Hello you
+```xml
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+```
+
+Hint:
+
+If you got issues like "Unresolved plugin: 'org.apache.maven.plugins:maven-clean-plugin:2.5'", try to clean up .m2 folder.
+
+- mv .m2 .m2_old
+- IntelliJ CTRL+SHIFT+A -> Enter "Reload All Maven Projects"
+
+##### Hello you
 
 ### How to deploy an React app to AWS
 
