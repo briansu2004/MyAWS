@@ -111,13 +111,24 @@ Serverless solution
 
 Update `???-aws.jar` to AWS Lambda function
 
-1st test
+1st test (cold start)
+
+```dos
+Init duration: 4788.92 ms
+Duration: 338.85 ms
+Billed durartion: 359 ms
+```
 
 ![1672431161633](image/README/1672431161633.png)
 
-2nd test
+2nd test (hot start)
 
 ![1672431181938](image/README/1672431181938.png)
+
+```dos
+Duration: 2.29 ms
+Billed durartion: 3 ms
+```
 
 Note both the "Duration" and "Billed duration" are much smaller in the 2nd test.
 
@@ -135,6 +146,26 @@ Versions -> Publish a new version
 
 ![1672431484245](image/README/1672431484245.png)
 
+3rd test (SnapStart's cold start)
+
+```dos
+Restore duration: 351.72 ms
+Duration: 370.38 ms
+Billed duration: 589 ms
+```
+
+The "Restore duration" is 351.72 ms - much smaller than 4788.92 ms
+
+![1672431529081](image/README/1672431529081.png)
+
+4th test (SnapStart's hot start)
+
+![1672431717051](image/README/1672431717051.png)
+
+```dos
+Duration: 20.10 ms
+Billed durartion: 21 ms
+```
 
 #### How to deploy Java app to AWS with Lambda
 
