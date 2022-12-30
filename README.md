@@ -111,6 +111,31 @@ Serverless solution
 
 Update `???-aws.jar` to AWS Lambda function
 
+1st test
+
+![1672431161633](image/README/1672431161633.png)
+
+2nd test
+
+![1672431181938](image/README/1672431181938.png)
+
+Note both the "Duration" and "Billed duration" are much smaller in the 2nd test.
+
+[Add the "SnapStart"]
+
+```dos
+Configuration -> Edit -> SnapStart -> PublishedVersions -> Save
+=>
+Versions -> Publish a new version
+```
+
+![1672431345943](image/README/1672431345943.png)
+
+![1672431430177](image/README/1672431430177.png)
+
+![1672431484245](image/README/1672431484245.png)
+
+
 #### How to deploy Java app to AWS with Lambda
 
 ##### Hello World
