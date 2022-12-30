@@ -53,6 +53,12 @@ Use `CloudPing.co`
 
 Serverless solution
 
+#### How to deploy Java Spring Boot app to AWS with Lambda
+
+[Java part]
+
+![1672429244461](image/README/1672429244461.png)
+
 #### How to deploy Java app to AWS with Lambda
 
 ##### Hello World
