@@ -51,11 +51,13 @@ Use `CloudPing.co`
 
 ### How to use AWS Lamda
 
-Serverless
+Serverless solution
 
 #### How to deploy Java app to AWS with Lambda
 
 ##### Hello World
+
+[Java part]
 
 Amazon Corretto
 
@@ -119,6 +121,8 @@ public class HelloAWSLambda
 mvn clean package
 ```
 
+`hello-lambda-1.0-SNAPSHOT.jar`
+
 ![1672416732297](image/README/1672416732297.png)
 
 IntelliJ tips:
@@ -129,6 +133,18 @@ If you got issues like "Unresolved plugin: 'org.apache.maven.plugins:maven-clean
 - IntelliJ CTRL+SHIFT+A -> Enter "Reload All Maven Projects"
 
 Also, if rebuild doesn't resolve some maven issues, try "Reload All Maven Projects"!
+
+[AWS part]
+
+Create function
+
+![1672416876410](image/README/1672416876410.png)
+
+Upload .jar file
+
+![1672416979431](image/README/1672416979431.png)
+
+![1672416944714](image/README/1672416944714.png)
 
 ##### Hello you
 
