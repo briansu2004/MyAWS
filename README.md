@@ -168,6 +168,47 @@ In this case, just simple string
 
 ![1672417441340](image/README/1672417441340.png)
 
+#### How to use the AWS Lambda Java Core Library
+
+[Developer Guide]
+
+<https://docs.aws.amazon.com/lambda/latest/dg/lambda-java.html>
+
+Lambda provides the following libraries for Java functions:
+
+- com.amazonaws:aws-lambda-java-core (required) – Defines handler method interfaces and the context object that the runtime passes to the handler. If you define your own input types, this is the only library that you need.
+- com.amazonaws:aws-lambda-java-events – Input types for events from services that invoke Lambda functions.
+- com.amazonaws:aws-lambda-java-log4j2 – An appender library for Apache Log4j 2 that you can use to add the request ID for the current invocation to your function logs.
+- AWS SDK for Java 2.0 – The official AWS SDK for the Java programming language.
+
+[Java part]
+
+![1672418915379](image/README/1672418915379.png)
+
+```xml
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-lambda-java-core</artifactId>
+      <version>1.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+```
+
+[AWS part]
+
 ### How to deploy an React app to AWS
 
 #### How to deploy React app to AWS ECR+EC2+ECS with docker (recommended)
