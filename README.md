@@ -53,7 +53,9 @@ Use `CloudPing.co`
 
 Serverless solution
 
-#### How to deploy Java Spring Boot app to AWS with Lambda
+#### How to deploy Java Spring Boot app to AWS with Lambda and how to leverage AWS Lambda SnapStart
+
+AWS Lambda SnapStart is a new performance optimization developed by AWS that can significantly improve the startup time for applications. This feature delivers up to 10x faster function startup times for latency-sensitive Java applications at no extra cost, and with minimal or no code changes.
 
 [Java part]
 
