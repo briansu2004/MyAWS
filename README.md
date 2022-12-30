@@ -57,7 +57,11 @@ Serverless
 
 - Hello World
 
-![1672414115172](image/README/1672414115172.png)
+Amazon Corretto
+
+org.apache.maven.archetypes:maven-archetype-quickstart
+
+![1672414697880](image/README/1672414697880.png)
 
 ![1672414260246](image/README/1672414260246.png)
 
