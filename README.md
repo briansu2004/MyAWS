@@ -158,7 +158,15 @@ In this case, just empty string
 
 ![1672417144124](image/README/1672417144124.png)
 
-##### Hello you
+##### Hello name
+
+![1672417402061](image/README/1672417402061.png)
+
+Test
+
+In this case, just simple string
+
+![1672417441340](image/README/1672417441340.png)
 
 ### How to deploy an React app to AWS
 
