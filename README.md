@@ -207,6 +207,8 @@ Lambda provides the following libraries for Java functions:
   </dependencies>
 ```
 
+![1672420006230](image/README/1672420006230.png)
+
 [AWS part]
 
 ### How to deploy an React app to AWS
