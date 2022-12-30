@@ -49,13 +49,15 @@ Migrated an on premise Cassandra to DynamoDB with AWS DMS for an insurance clien
 
 Use `CloudPing.co`
 
-### How to deploy an React app
-
-#### How to deploy Java app to AWS with Lambda (recommended)
+### How to use AWS Lamda
 
 Serverless
 
+#### How to deploy Java app to AWS with Lambda
+
 ...
+
+### How to deploy an React app to AWS
 
 #### How to deploy React app to AWS ECR+EC2+ECS with docker (recommended)
 
