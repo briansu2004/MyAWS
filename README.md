@@ -211,6 +211,10 @@ Lambda provides the following libraries for Java functions:
 
 [AWS part]
 
+![1672420083929](image/README/1672420083929.png)
+
+![1672420115425](image/README/1672420115425.png)
+
 ### How to deploy an React app to AWS
 
 #### How to deploy React app to AWS ECR+EC2+ECS with docker (recommended)
