@@ -65,21 +65,70 @@ org.apache.maven.archetypes:maven-archetype-quickstart
 
 ![1672415200278](image/README/1672415200278.png)
 
-![1672414871822](image/README/1672414871822.png)
-
-![1672414260246](image/README/1672414260246.png)
+![1672416244313](image/README/1672416244313.png)
 
 ```xml
-    <maven.compiler.source>18</maven.compiler.source>
-    <maven.compiler.target>18</maven.compiler.target>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <configuration>
+          <createDependencyReducedPom>false</createDependencyReducedPom>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 ```
 
-Hint:
+```java
+public class HelloAWSLambda
+{
+    public String handelRequest()
+    {
+        return "Hello AWS Lambda";
+    }
+}
+```
+
+```dos
+mvn clean package
+```
+
+![1672416732297](image/README/1672416732297.png)
+
+IntelliJ tips:
 
 If you got issues like "Unresolved plugin: 'org.apache.maven.plugins:maven-clean-plugin:2.5'", try to clean up .m2 folder.
 
 - mv .m2 .m2_old
 - IntelliJ CTRL+SHIFT+A -> Enter "Reload All Maven Projects"
+
+Also, if rebuild doesn't resolve some maven issues, try "Reload All Maven Projects"!
 
 ##### Hello you
 
