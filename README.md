@@ -146,6 +146,18 @@ Upload .jar file
 
 ![1672416944714](image/README/1672416944714.png)
 
+Edit runtime settings
+
+![1672417037009](image/README/1672417037009.png)
+
+Test
+
+In this case, just empty string
+
+![1672417122287](image/README/1672417122287.png)
+
+![1672417144124](image/README/1672417144124.png)
+
 ##### Hello you
 
 ### How to deploy an React app to AWS
