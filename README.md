@@ -59,6 +59,17 @@ Serverless solution
 
 ![1672429244461](image/README/1672429244461.png)
 
+`import java.util.function.Function;`
+
+![1672430368412](image/README/1672430368412.png)
+
+```xml
+  <dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-function-adapter-aws</artifactId>
+  </dependency>
+```
+
 #### How to deploy Java app to AWS with Lambda
 
 ##### Hello World
@@ -131,12 +142,14 @@ mvn clean package
 
 ![1672416732297](image/README/1672416732297.png)
 
-IntelliJ tips:
+[IntelliJ tips]
 
 If you got issues like "Unresolved plugin: 'org.apache.maven.plugins:maven-clean-plugin:2.5'", try to clean up .m2 folder.
 
+- Close IntelliJ
 - mv .m2 .m2_old
-- IntelliJ CTRL+SHIFT+A -> Enter "Reload All Maven Projects"
+- Lanuch IntelliJ again
+- CTRL+SHIFT+A -> "Reload All Maven Projects"
 
 Also, if rebuild doesn't resolve some maven issues, try "Reload All Maven Projects"!
 
